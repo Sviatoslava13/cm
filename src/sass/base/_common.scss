@@ -1,0 +1,62 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&family=Playfair+Display&display=swap');
+
+body {
+    font-family: Manrope, sans-serif;
+    //letter-spacing: 0.03em;
+    background-color: $light;
+    &.active{
+        overflow: hidden;
+    }
+}
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+
+
+button {
+    cursor: pointer;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.container{
+   width: $mobile;
+    padding: 0 30px;
+    margin: 0 auto;
+    @media screen and (min-width: $tablet){
+        width: $tablet;
+        padding: 0 20px;
+    }
+          @media screen and (min-width: $desktop) {
+              width: $desktop;
+              padding: 0 135px;
+          }
+}

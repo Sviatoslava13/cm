@@ -1,0 +1,174 @@
+.question {
+  position: relative;
+}
+.question__title {
+  font-family: 'Playfair Display';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.33;
+  text-align: center;
+  color: $green;
+  margin-bottom: 20px;
+  @media screen and(min-width: $tablet) {
+    font-size: 32px;
+    line-height: 1.34;
+  }
+  @media screen and(min-width: $desktop) {
+    font-size: 50px;
+    margin-bottom: 16px;
+  }
+}
+.question__text {
+  font-family: 'Manrope';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.37;
+  text-align: center;
+  color: $dark;
+  max-width: 308px;
+  margin-bottom: 20px;
+  @media screen and(min-width: $tablet) {
+    max-width: 384px;
+    font-size: 20px;
+    line-height: 1.35;
+    margin-bottom: 12px;
+  }
+  @media screen and(min-width: $desktop) {
+    font-size: 24px;
+    line-height: 1.37;
+    max-width: 575px;
+  }
+}
+.question__form {
+  padding: 0 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+  background-color: $light;
+  @media screen and(min-width: $tablet) {
+    padding: 20px 42px 45px 42px;
+    max-width: 478px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  @media screen and(min-width: $desktop) {
+    padding: 40px 100px;
+    max-width: 774px;
+  }
+}
+.question__input {
+  font-family: 'Manrope';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.37;
+  text-align: start;
+  color: $grey;
+  border: none;
+  outline: none;
+  padding: 2px;
+  width: 315px;
+  height: 26px;
+  border-bottom: 1px solid $green;
+  background-color: transparent;
+  margin-bottom: 20px;
+  &:nth-child(3n + 2) {
+    margin-bottom: 0;
+  }
+  @media screen and(min-width: $tablet) {
+    width: 354px;
+    height: 31px;
+    font-size: 20px;
+    line-height: 1.35;
+  }
+  @media screen and(min-width: $desktop) {
+    font-size: 24px;
+    line-height: 1.37;
+    width: 575px;
+    height: 53px;
+    margin-bottom: 12px;
+  }
+}
+.question__btn {
+  font-family: 'Manrope';
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.37;
+  color: $light;
+  width: 285px;
+  height: 56px;
+  background: $green;
+  border: none;
+  outline: none;
+  margin-top: 30px;
+  text-transform: uppercase;
+  @media screen and(min-width: $tablet) {
+    width: 394px;
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.35;
+  }
+  @media screen and(min-width: $desktop) {
+    margin-top: 40px;
+    width: 575px;
+    height: 69px;
+    font-size: 28px;
+  }
+}
+.question__img {
+  min-width: 100%;
+  height: 279px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../images/questions/question_mobile_1x.png');
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url('../images/questions/question_mobile_2x.png');
+  }
+
+  @media screen and (min-device-pixel-ratio: 3),
+    screen and (min-resolution: 288dpi),
+    screen and (min-resolution: 3dppx) {
+    background-image: url('../images/questions/question_mobile_3x.png');
+  }
+  @media screen and(min-width: $tablet) {
+    height: 569px;
+    background-image: url('../images/questions/qustioen_tablet_1x.png');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/questions/question_tablet_2x.png');
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      background-image: url('../images/questions/question_tablet_3x.png');
+    }
+  }
+
+  @media screen and(min-width: $desktop) {
+    height: 920px;
+    background-image: url('../images/questions/question_desk_1x.png');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/questions/question_desk_2x.png');
+    }
+
+    @media screen and (min-device-pixel-ratio: 3),
+      screen and (min-resolution: 288dpi),
+      screen and (min-resolution: 3dppx) {
+      background-image: url('../images/questions/question_desk_3x.png');
+    }
+  }
+}

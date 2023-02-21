@@ -1,0 +1,106 @@
+.footer {
+  background-color: $dark;
+  padding-top: 40px;
+  padding-bottom: 12px;
+
+  @media screen and(min-width: $tablet) {
+    padding-top: 83px;
+  }
+}
+
+.footer__container {
+  @media screen and(min-width: $tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and(min-width: $tablet) {
+    align-items: flex-start;
+  }
+}
+.footer__title {
+  font-family: 'Playfair Display';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.34;
+  text-align: center;
+  margin-bottom: 26px;
+  color: $light;
+  @media screen and(min-width: $tablet) {
+    font-size: 50px;
+    margin: 0 89px 0 0;
+  }
+  @media screen and(min-width: $desktop) {
+    font-size: 70px;
+    margin-right: 181px;
+  }
+}
+.footer__link {
+  font-family: 'Manrope';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.37;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  color: $light;
+  @media screen and(min-width: $tablet) {
+    font-size: 20px;
+    line-height: 1.35;
+  }
+  @media screen and(min-width: $desktop) {
+    font-size: 24px;
+    line-height: 1.37;
+  }
+}
+.footer__svg {
+  margin-right: 15px;
+  @media screen and(min-width: $desktop) {
+    margin-right: 28px;
+  }
+}
+.footer__item {
+  margin-bottom: 20px;
+  &:nth-child(3n + 3) {
+    margin-bottom: 0;
+  }
+  @media screen and(min-width: $tablet) {
+    margin-bottom: 45px;
+  }
+}
+.footer-networks {
+  display: flex;
+  margin-bottom: 32px;
+  margin-top: 24px;
+  @media screen and(min-width: $tablet) {
+    margin-top: 50px;
+    margin-bottom: 52px;
+  }
+}
+.footer-networks__item {
+  &:not(:last-child) {
+    margin-right: 35px;
+  }
+  @media screen and(min-width: $tablet) {
+    &:not(:last-child) {
+      margin-right: 38px;
+    }
+  }
+}
+.footer__text {
+  font-family: 'Manrope';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  text-align: center;
+  color: $grey;
+  @media screen and(min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.35;
+  }
+}
