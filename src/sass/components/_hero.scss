@@ -1,5 +1,5 @@
 .hero {
-  width: 100%;
+  width: 375px;
   height: 788px;
   margin: 0 auto;
   position: absolute;
@@ -43,7 +43,7 @@
 
   @media screen and(min-width: $tablet) {
     height: 818px;
-    max-width: 768px;
+    width: 768px;
     background-image: linear-gradient(
         360deg,
         rgba(0, 0, 0, 0.8) 0%,
@@ -74,7 +74,7 @@
   }
   @media screen and(min-width: $desktop) {
     height: 1068px;
-    max-width: 1440px;
+    width: 1440px;
     background-image: linear-gradient(
         360deg,
         rgba(0, 0, 0, 0.8) 0%,
@@ -105,14 +105,7 @@
     }
   }
 }
-.hero__container{
-opacity: 0;
 
-&.active{
-  opacity: 1;
-  display: contents;
-}
-}
 .hero__title {
   font-family: 'Playfair Display';
   font-weight: 400;

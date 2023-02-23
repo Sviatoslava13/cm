@@ -1,12 +1,11 @@
-.header{
+.header {
   margin: 0 auto;
-    @media screen and(max-width: $tablet){
+  @media screen and(max-width: $tablet) {
     width: 375px;
-   }
+  }
   @media screen and(min-width: $tablet) and(max-width: $desktop) {
-  width: 768px;
-
-}
+    width: 768px;
+  }
 }
 .header__container {
   display: flex;
@@ -25,10 +24,15 @@
 .header__logo {
   z-index: 20;
 }
-.navigation__nav{
-    @media screen and(max-width: $desktop) {
-  margin-top: 113px;
-    margin-bottom: 50px;}
+.navigation__nav {
+  @media screen and(max-width: $tablet) {
+    margin-top: 133px;
+    margin-bottom: 47px;
+  }
+    @media screen and(min-width: $tablet) and(max-width: $desktop) {
+    margin-top: 180px;
+    margin-bottom: 60px;
+  }
 }
 .navigation__list {
   display: flex;
@@ -70,6 +74,12 @@
   &:not(:last-child) {
     margin-bottom: 35px;
   }
+  @media screen and(min-width: $tablet) and(max-width: $desktop) {
+    margin-bottom: 0;
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
+  }
 }
 .header__img {
   width: 56px;
@@ -101,27 +111,52 @@
     display: none;
   }
   &.is-open {
-    // width: 100vw;
-    width: 188px;
-    height: 100vh;
-    display: flex;
-    position: fixed;
-    top: 50%;
-    left: 0;
-    transform: translate(0, -50%);
-    align-items: center;
-    flex-direction: column;
-    background-color: rgba(32, 35, 33, 0.7);
-    @media screen and(min-width: $tablet) {
-      width: 384px;
+    @media screen and(max-width: $desktop) {
+      width: 375px;
+      height: 100vh;
+      display: flex;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding-left: 30px;
+      align-items: flex-start;
+      flex-direction: column;
+      overflow-y: scroll;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url('../images/menu/hero_mob_menu_1x.png');
+
+      @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+        background-image: url('../images/menu/hero_mob_menu_2x.png');
+      }
+
+      @media screen and (min-device-pixel-ratio: 3),
+        screen and (min-resolution: 288dpi),
+        screen and (min-resolution: 3dppx) {
+        background-image: url('../images/menu/hero_mob_menu_3x.png');
+      }
+
+      @media screen and(min-width: $tablet) {
+        width: 768px;
+        padding-left: 82px;
+        background-image: url('../images/menu/hero_tab_menu_1x.png');
+
+        @media screen and (min-device-pixel-ratio: 2),
+          screen and (min-resolution: 192dpi),
+          screen and (min-resolution: 2dppx) {
+          background-image: url('../images/menu/hero_tab_menu_2x.png');
+        }
+
+        @media screen and (min-device-pixel-ratio: 3),
+          screen and (min-resolution: 288dpi),
+          screen and (min-resolution: 3dppx) {
+          background-image: url('../images/menu/hero_tab_menu_3x.png');
+        }
+      }
     }
-    //  text-align: center;
-    //background-size: cover;
-    // background-repeat: no-repeat;
-    // background-image: linear-gradient(360deg,
-    //     rgba(0, 0, 0, 0.8) 0%,
-    //     rgba(0, 0, 0, 0) 97.38%),
-    //   url('../images/hero/hero_mobile_1x.png');
   }
 }
 .navigation {
@@ -142,9 +177,16 @@
   display: none;
 }
 .navigation-networks {
+  margin-left: 33px;
+  @media screen and(min-width: $tablet) {
+    display: flex;
+    margin-left: 0;
+  }
   @media screen and(min-width: $desktop) {
     position: absolute;
-bottom: -640%;
+    bottom: -640%;
     right: 9%;
+    margin: 0;
+    display: block;
   }
 }
