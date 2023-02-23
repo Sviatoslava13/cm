@@ -5,21 +5,15 @@
   }
 }
 .gallery__title {
-  font-family: 'Playfair Display';
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 1.34;
+  @extend %font-title;
   text-align: center;
   color: $green;
   margin-bottom: 20px;
   @media screen and(min-width: $tablet) {
     margin-bottom: 40px;
-    font-size: 50px;
   }
   @media screen and(min-width: $desktop) {
     margin-bottom: 80px;
-    font-size: 70px;
-    line-height: 1.32;
   }
 }
 .filter-gallery {
@@ -29,12 +23,12 @@
   @media screen and(max-width: $tablet) {
     flex-wrap: wrap;
   }
-        @media screen and(min-width: $tablet) {
-            margin-bottom: 40px;
-        }
-                    @media screen and(min-width: $desktop) {
-                      margin-bottom: 60px;
-                    }
+  @media screen and(min-width: $tablet) {
+    margin-bottom: 40px;
+  }
+  @media screen and(min-width: $desktop) {
+    margin-bottom: 60px;
+  }
 }
 .filter-gallery__item {
   margin-right: 20px;
@@ -54,10 +48,7 @@
   }
 }
 .filter-gallery__btn {
-  font-family: 'Manrope';
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.37;
+  @extend %font-subtitle;
   text-align: center;
   color: $green;
   width: 147px;
@@ -72,13 +63,10 @@
   @media screen and(min-width: $tablet) {
     width: 167px;
     height: 60px;
-    font-size: 20px;
-    line-height: 1.35;
   }
   @media screen and(min-width: $desktop) {
     width: 278px;
     height: 70px;
-    font-size: 28px;
   }
 }
 .gallery__img {
@@ -111,27 +99,25 @@
 .gallery-spring__list,
 .gallery-winter__list,
 .gallery-autumn__list {
-  
-    @media screen and(max-width: $tablet) {
-  flex-wrap: wrap;
-display: flex;
-}
-        @media screen and(min-width: $tablet) {
-          column-count: 3;
-        }
+  @media screen and(max-width: $tablet) {
+    flex-wrap: wrap;
+    display: flex;
+  }
+  @media screen and(min-width: $tablet) {
+    column-count: 3;
+  }
 }
 .gallery-summer__item,
 .gallery-spring__item,
 .gallery-winter__item,
 .gallery-autumn__item {
-    @media screen and(max-width: $tablet) {
-  margin-bottom: 12px;
-  &:nth-child(3n + 1) {
-    margin-right: 20px;
+  @media screen and(max-width: $tablet) {
+    margin-bottom: 12px;
+    &:nth-child(3n + 1) {
+      margin-right: 20px;
+    }
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
   }
-  &:nth-last-child(-n + 2) {
-    margin-bottom: 0;
-  }}
-
-         
 }

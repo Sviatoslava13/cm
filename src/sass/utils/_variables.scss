@@ -21,3 +21,83 @@ $grey: #a3a5a3;
   color: #003d1f;
   border-bottom: 1px solid #003d1f;
 }
+%font-title {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.34;
+  @media screen and(min-width: $tablet) {
+    font-size: 50px;
+  }
+
+  @media screen and(min-width: $desktop) {
+    font-size: 70px;
+    line-height: 1.32;
+  }
+}
+%font-hero {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.325;
+  @media screen and(min-width: $tablet) {
+    font-size: 70px;
+  }
+  @media screen and(min-width: $desktop) {
+    font-size: 110px;
+    line-height: 1.33;
+  }
+}
+%font-subtitle {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.37;
+  @media screen and(min-width: $tablet) {
+    font-size: 20px;
+    line-height: 1.35;
+  }
+  @media screen and(min-width: $desktop) {
+    font-size: 28px;
+  }
+}
+%font-text {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.37;
+  @media screen and(min-width: $tablet) {
+    font-size: 20px;
+    line-height: 1.35;
+  }
+  @media screen and(min-width: $desktop) {
+    font-size: 24px;
+    line-height: 1.37;
+  }
+}
+
+%font-modal {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.33;
+  @media screen and(min-width: $tablet) {
+    font-size: 32px;
+    line-height: 1.34;
+  }
+  @media screen and(min-width: $desktop) {
+    font-size: 60px;
+    line-height: 1.32;
+  }
+}
+%font-header {
+  font-family: 'Manrope';
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.35;
+}

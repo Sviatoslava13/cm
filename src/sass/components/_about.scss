@@ -3,46 +3,31 @@
   @media screen and(min-width: $tablet) {
     padding: 820px 0 80px 0;
   }
-    @media screen and(min-width: $desktop) {
-      padding: 1020px 0 80px 0;
-    }
+  @media screen and(min-width: $desktop) {
+    padding: 1020px 0 80px 0;
+  }
 }
 .about__title {
-  font-family: 'Playfair Display';
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 1.34;
+  @extend %font-title;
   color: $green;
   margin-bottom: 20px;
   text-align: center;
   @media screen and(min-width: $tablet) {
     margin-bottom: 40px;
-    font-size: 50px;
   }
   @media screen and(min-width: $desktop) {
-    font-size: 70px;
-    line-height: 1.32;
     margin-bottom: 60px;
   }
 }
 .about__text {
-  font-family: 'Manrope';
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.37;
+@extend %font-text;
   color: $dark;
-  &:not(:last-child){
+  &:not(:last-child) {
     margin-bottom: 8px;
   }
   @media screen and(min-width: $tablet) {
-    font-size: 20px;
-    line-height: 1.35;
     &:not(:last-child) {
-        margin-bottom: 12px;
-      }
-  }
-  @media screen and(min-width: $desktop) {
-    font-size: 24px;
-    line-height: 1.37;
+      margin-bottom: 12px;
+    }
   }
 }

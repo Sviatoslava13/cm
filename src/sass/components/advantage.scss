@@ -1,18 +1,12 @@
 .advantage__title {
-  font-family: 'Playfair Display';
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 1.34;
+  @extend %font-title;
   text-align: center;
   color: $green;
   margin-bottom: 21px;
   @media screen and(min-width: $tablet) {
-    font-size: 50px;
     margin-bottom: 40px;
   }
   @media screen and(min-width: $desktop) {
-    font-size: 70px;
-    line-height: 1.32;
     margin-bottom: 60px;
   }
 }
@@ -58,10 +52,7 @@
   }
 }
 .advantage__item {
-  font-family: 'Manrope';
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.37;
+  @extend %font-text;
   color: $light;
   display: flex;
   align-items: center;
@@ -72,16 +63,12 @@
     margin-bottom: 32px;
   }
   @media screen and(min-width: $tablet) {
-    font-size: 20px;
-    line-height: 1.29;
     height: 64px;
     &:not(:last-child) {
       margin-bottom: 20px;
     }
   }
   @media screen and(min-width: $desktop) {
-    font-size: 24px;
-    line-height: 1.37;
     margin-bottom: 24px;
     margin-right: 0;
     width: 611px;

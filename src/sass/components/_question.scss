@@ -2,40 +2,25 @@
   position: relative;
 }
 .question__title {
-  font-family: 'Playfair Display';
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 1.33;
+  @extend %font-modal;
   text-align: center;
   color: $green;
   margin-bottom: 20px;
-  @media screen and(min-width: $tablet) {
-    font-size: 32px;
-    line-height: 1.34;
-  }
   @media screen and(min-width: $desktop) {
-    font-size: 50px;
     margin-bottom: 16px;
   }
 }
 .question__text {
-  font-family: 'Manrope';
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.37;
+  @extend %font-text;
   text-align: center;
   color: $dark;
   max-width: 308px;
   margin-bottom: 20px;
   @media screen and(min-width: $tablet) {
     max-width: 384px;
-    font-size: 20px;
-    line-height: 1.35;
     margin-bottom: 12px;
   }
   @media screen and(min-width: $desktop) {
-    font-size: 24px;
-    line-height: 1.37;
     max-width: 575px;
   }
 }
@@ -63,10 +48,7 @@
   }
 }
 .question__input {
-  font-family: 'Manrope';
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.37;
+  @extend %font-text;
   text-align: start;
   color: $green;
   border: none;
@@ -88,26 +70,19 @@
   @media screen and(min-width: $tablet) {
     width: 354px;
     height: 31px;
-    font-size: 20px;
-    line-height: 1.35;
   }
   @media screen and(min-width: $desktop) {
-    font-size: 24px;
-    line-height: 1.37;
     width: 575px;
     height: 53px;
     margin-bottom: 12px;
   }
 }
 .question__btn {
-  font-family: 'Manrope';
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.37;
+  @extend %font-subtitle;
   color: $light;
   width: 285px;
   height: 56px;
-  background: $green;
+  background-color: $green;
   border: none;
   outline: none;
   margin-top: 30px;
@@ -117,14 +92,11 @@
   @media screen and(min-width: $tablet) {
     width: 394px;
     margin-top: 20px;
-    font-size: 20px;
-    line-height: 1.35;
   }
   @media screen and(min-width: $desktop) {
     margin-top: 40px;
     width: 575px;
     height: 69px;
-    font-size: 28px;
   }
 }
 .question__img {

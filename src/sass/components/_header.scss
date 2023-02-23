@@ -1,5 +1,7 @@
 .header {
   margin: 0 auto;
+  position: relative;
+  z-index: 20;
   @media screen and(max-width: $tablet) {
     width: 375px;
   }
@@ -10,8 +12,6 @@
 .header__container {
   display: flex;
   justify-content: space-between;
-  z-index: 20;
-  position: relative;
   padding-top: 27px;
   @media screen and(min-width: $tablet) and(max-width: $desktop) {
     padding: 28px 46px 0 82px;
@@ -29,7 +29,7 @@
     margin-top: 133px;
     margin-bottom: 47px;
   }
-    @media screen and(min-width: $tablet) and(max-width: $desktop) {
+  @media screen and(min-width: $tablet) and(max-width: $desktop) {
     margin-top: 180px;
     margin-bottom: 60px;
   }
@@ -60,10 +60,7 @@
   }
 }
 .navigation__link {
-  font-family: 'Manrope';
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 1.35;
+@extend %font-header;
   color: $light;
   &:hover,
   &:focus {
