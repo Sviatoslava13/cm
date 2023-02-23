@@ -1,2 +1,0 @@
-(()=>{const e=document.querySelector(".navigation"),t=document.querySelector(".close"),c=document.querySelector(".open"),o=document.querySelector("#body"),n=()=>{const t="true"===c.getAttribute("aria-expanded")||!1;c.setAttribute("aria-expanded",!t),e.classList.toggle("is-open"),o.classList.toggle("active")};c.addEventListener("click",n),t.addEventListener("click",n)})();
-//# sourceMappingURL=index.d2cafa33.js.map

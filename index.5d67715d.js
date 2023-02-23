@@ -1,2 +1,0 @@
-!function(){var e,t,c,n,o;e=document.querySelector(".navigation"),t=document.querySelector(".close"),c=document.querySelector(".open"),n=document.querySelector("#body"),o=function(){var t="true"===c.getAttribute("aria-expanded")||!1;c.setAttribute("aria-expanded",!t),e.classList.toggle("is-open"),n.classList.toggle("active")},c.addEventListener("click",o),t.addEventListener("click",o)}();
-//# sourceMappingURL=index.5d67715d.js.map
