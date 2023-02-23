@@ -25,9 +25,16 @@
 .filter-gallery {
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
   @media screen and(max-width: $tablet) {
     flex-wrap: wrap;
   }
+        @media screen and(min-width: $tablet) {
+            margin-bottom: 40px;
+        }
+                    @media screen and(min-width: $desktop) {
+                      margin-bottom: 60px;
+                    }
 }
 .filter-gallery__item {
   margin-right: 20px;
@@ -109,6 +116,9 @@
   flex-wrap: wrap;
 display: flex;
 }
+        @media screen and(min-width: $tablet) {
+          column-count: 3;
+        }
 }
 .gallery-summer__item,
 .gallery-spring__item,
