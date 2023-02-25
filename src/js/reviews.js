@@ -48,7 +48,7 @@ function minusSlides() {
 }
 
 function showSlides(n) {
-
+   let i;
   for (i = 0; i < item.length; i+=1) {
      item[i].style.display = 'none';
    }
