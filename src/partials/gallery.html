@@ -1,124 +1,131 @@
-<section class="gallery">
+<section class="gallery" id="gallery">
   <div class="container">
     <h2 class="gallery__title">Галерея</h2>
     <ul class="filter-gallery">
       <li class="filter-gallery__item">
-        <button class="filter-gallery__btn" type="button">Літо</button>
+        <button class="filter-gallery__btn" id="summer" type="button">
+          Літо
+        </button>
       </li>
       <li class="filter-gallery__item">
-        <button class="filter-gallery__btn" type="button">Осінь</button>
+        <button class="filter-gallery__btn" id="autumn" type="button">
+          Осінь
+        </button>
       </li>
       <li class="filter-gallery__item">
-        <button class="filter-gallery__btn" type="button">Зима</button>
+        <button class="filter-gallery__btn" id="winter" type="button">
+          Зима
+        </button>
       </li>
       <li class="filter-gallery__item">
-        <button class="filter-gallery__btn" type="button">Весна</button>
+        <button class="filter-gallery__btn" id="spring" type="button">
+          Весна
+        </button>
       </li>
     </ul>
-    <div>
-      <ul class="gallery-summer__list">
-        <li class="gallery-summer__item ">
-          <picture>
-            <source srcset="
+    <ul class="gallery-summer__list active">
+      <li class="gallery-summer__item">
+        <picture>
+          <source srcset="
               ./images/gallery/desk/summer_1_desk_1x-min.png 1x,
               ./images/gallery/desk/summer_1_desk_2x-min.png 2x,
               ./images/gallery/desk/summer_1_desk_3x-min.png 3x
             " media="(min-width:1440px)" />
-            <source srcset="
+          <source srcset="
               ./images/gallery/tab/summer_1_tabl_1x.png 1x,
               ./images/gallery/tab/summer_1_tabl_2x.png 2x,
               ./images/gallery/tab/summer_1_tabl_3x.png 3x
             " media="(min-width:768px)" />
-            <source srcset="
+          <source srcset="
               ./images/gallery/mob/summer_1_mobile_1x.png 1x,
               ./images/gallery/mob/summer_1_mobile_2x.png 2x,
               ./images/gallery/mob/summer_1_mobile_3x.png 3x
             " media="(max-width:768px)" />
-            <img class="gallery__img" src="./images/gallery/mob/summer_1_mobile_1x.png" alt="summer" />
-          </picture>
-        </li>
-        <li class="gallery-summer__item ">
-          <picture>
-            <source srcset="
-              ./images/gallery/desk/summer_2_desk_1x-min.png 1x,
-              ./images/gallery/desk/summer_2_desk_2x-min.png 2x,
-              ./images/gallery/desk/summer_2_desk_3x-min.png 3x
-            " media="(min-width:1440px)" />
-            <source srcset="
-              ./images/gallery/tab/summer_2_tabl_1x.png 1x,
-              ./images/gallery/tab/summer_2_tabl_2x.png 2x,
-              ./images/gallery/tab/summer_2_tabl_3x.png 3x
-            " media="(min-width:768px)" />
-            <source srcset="
-              ./images/gallery/mob/summer_2_mobile_1x.png 1x,
-              ./images/gallery/mob/summer_2_mobile_2x.png 2x,
-              ./images/gallery/mob/summer_2_mobile_3x.png 3x
-            " media="(max-width:768px)" />
-            <img class="gallery__img" src="./images/gallery/mob/summer_2_mobile_1x.png" alt="summer" />
-          </picture>
-        </li>
-        <li class="gallery-summer__item">
-          <picture>
-            <source srcset="
+          <img class="gallery__img" src="./images/gallery/mob/summer_1_mobile_1x.png" alt="summer" />
+        </picture>
+      </li>
+
+      <li class="gallery-summer__item special">
+        <picture>
+          <source srcset="
               ./images/gallery/desk/summer_3_desk_1x-min.png 1x,
               ./images/gallery/desk/summer_3_desk_2x-min.png 2x,
               ./images/gallery/desk/summer_3_desk_3x-min.png 3x
             " media="(min-width:1440px)" />
-            <source srcset="
+          <source srcset="
               ./images/gallery/tab/summer_3_tabl_1x.png 1x,
               ./images/gallery/tab/summer_3_tabl_2x.png 2x,
               ./images/gallery/tab/summer_3_tabl_3x.png 3x
             " media="(min-width:768px)" />
-            <source srcset="
+          <source srcset="
               ./images/gallery/mob/summer_3_mobile_1x.png 1x,
               ./images/gallery/mob/summer_3_mobile_2x.png 2x,
               ./images/gallery/mob/summer_3_mobile_3x.png 3x
             " media="(max-width:768px)" />
-            <img class="gallery__img special" src="./images/gallery/mob/summer_3_mobile_1x.png" alt="summer" />
-          </picture>
-        </li>
-        <li class="gallery-summer__item">
-          <picture>
-            <source srcset="
+          <img class="gallery__img special" src="./images/gallery/mob/summer_3_mobile_1x.png" alt="summer" />
+        </picture>
+      </li>
+      <li class="gallery-summer__item">
+        <picture>
+          <source srcset="
+              ./images/gallery/desk/summer_2_desk_1x-min.png 1x,
+              ./images/gallery/desk/summer_2_desk_2x-min.png 2x,
+              ./images/gallery/desk/summer_2_desk_3x-min.png 3x
+            " media="(min-width:1440px)" />
+          <source srcset="
+              ./images/gallery/tab/summer_2_tabl_1x.png 1x,
+              ./images/gallery/tab/summer_2_tabl_2x.png 2x,
+              ./images/gallery/tab/summer_2_tabl_3x.png 3x
+            " media="(min-width:768px)" />
+          <source srcset="
+              ./images/gallery/mob/summer_2_mobile_1x.png 1x,
+              ./images/gallery/mob/summer_2_mobile_2x.png 2x,
+              ./images/gallery/mob/summer_2_mobile_3x.png 3x
+            " media="(max-width:768px)" />
+          <img class="gallery__img" src="./images/gallery/mob/summer_2_mobile_1x.png" alt="summer" />
+        </picture>
+      </li>
+      <li class="gallery-summer__item">
+        <picture>
+          <source srcset="
               ./images/gallery/desk/summer_4_desk_1x-min.png 1x,
               ./images/gallery/desk/summer_4_desk_2x-min.png 2x,
               ./images/gallery/desk/summer_4_desk_3x-min.png 3x
             " media="(min-width:1440px)" />
-            <source srcset="
+          <source srcset="
               ./images/gallery/tab/summer_4_tabl_1x.png 1x,
               ./images/gallery/tab/summer_4_tabl_2x.png 2x,
               ./images/gallery/tab/summer_4_tabl_3x.png 3x
             " media="(min-width:768px)" />
-            <source srcset="
+          <source srcset="
               ./images/gallery/mob/summer_4_mobile_1x.png 1x,
               ./images/gallery/mob/summer_4_mobile_2x.png 2x,
               ./images/gallery/mob/summer_4_mobile_3x.png 3x
             " media="(max-width:768px)" />
-            <img class="gallery__img" src="./images/gallery/mob/summer_4_mobile_1x.png" alt="summer" />
-          </picture>
-        </li>
-        <li class="gallery-summer__item">
-          <picture>
-            <source srcset="
+          <img class="gallery__img" src="./images/gallery/mob/summer_4_mobile_1x.png" alt="summer" />
+        </picture>
+      </li>
+      <li class="gallery-summer__item">
+        <picture>
+          <source srcset="
               ./images/gallery/desk/summer_5_desk_1x-min.png 1x,
               ./images/gallery/desk/summer_5_desk_2x-min.png 2x,
               ./images/gallery/desk/summer_5_desk_3x-min.png 3x
             " media="(min-width:1440px)" />
-            <source srcset="
+          <source srcset="
               ./images/gallery/tab/summer_5_tabl_1x.png 1x,
               ./images/gallery/tab/summer_5_tabl_2x.png 2x,
               ./images/gallery/tab/summer_5_tabl_3x.png 3x
             " media="(min-width:768px)" />
-            <source srcset="
+          <source srcset="
               ./images/gallery/mob/summer_5_mobile_1x.png 1x,
               ./images/gallery/mob/summer_5_mobile_2x.png 2x,
               ./images/gallery/mob/summer_5_mobile_3x.png 3x
             " media="(max-width:768px)" />
-            <img class="gallery__img" src="./images/gallery/mob/summer_5_mobile_1x.png" alt="summer" />
-          </picture>
-        </li>
-      </ul>
-    </div>
+          <img class="gallery__img" src="./images/gallery/mob/summer_5_mobile_1x.png" alt="summer" />
+        </picture>
+      </li>
+    </ul>
     <ul class="gallery-autumn__list">
       <li class="gallery-autumn__item">
         <picture>
@@ -140,6 +147,27 @@
           <img class="gallery__img" src="./images/gallery/mob/autumn_1_mobile_1x-min.png" alt="autumn" />
         </picture>
       </li>
+
+      <li class="gallery-autumn__item special">
+        <picture>
+          <source srcset="
+              ./images/gallery/desk/autumn_3_desk_1x-min.png 1x,
+              ./images/gallery/desk/autumn_3_desk_2x-min.png 2x,
+              ./images/gallery/desk/autumn_3_desk_3x-min.png 3x
+            " media="(min-width:1440px)" />
+          <source srcset="
+              ./images/gallery/tab/autumn_3_tabl_1x.png 1x,
+              ./images/gallery/tab/autumn_3_tabl_2x.png 2x,
+              ./images/gallery/tab/autumn_3_tabl_3x.png 3x
+            " media="(min-width:768px)" />
+          <source srcset="
+              ./images/gallery/mob/autumn_3_mobile_1x-min.png 1x,
+              ./images/gallery/mob/autumn_3_mobile_2x-min.png 2x,
+              ./images/gallery/mob/autumn_3_mobile_3x-min.png 3x
+            " media="(max-width:768px)" />
+          <img class="gallery__img special" src="./images/gallery/mob/autumn_3_mobile_1x-min.png" alt="autumn" />
+        </picture>
+      </li>
       <li class="gallery-autumn__item">
         <picture>
           <source srcset="
@@ -158,26 +186,6 @@
               ./images/gallery/mob/autumn_2_mobile_3x-min.png 3x
             " media="(max-width:768px)" />
           <img class="gallery__img" src="./images/gallery/mob/autumn_2_mobile_1x-min.png" alt="autumn" />
-        </picture>
-      </li>
-      <li class="gallery-autumn__item">
-        <picture>
-          <source srcset="
-              ./images/gallery/desk/autumn_3_desk_1x-min.png 1x,
-              ./images/gallery/desk/autumn_3_desk_2x-min.png 2x,
-              ./images/gallery/desk/autumn_3_desk_3x-min.png 3x
-            " media="(min-width:1440px)" />
-          <source srcset="
-              ./images/gallery/tab/autumn_3_tabl_1x.png 1x,
-              ./images/gallery/tab/autumn_3_tabl_2x.png 2x,
-              ./images/gallery/tab/autumn_3_tabl_3x.png 3x
-            " media="(min-width:768px)" />
-          <source srcset="
-              ./images/gallery/mob/autumn_3_mobile_1x-min.png 1x,
-              ./images/gallery/mob/autumn_3_mobile_2x-min.png 2x,
-              ./images/gallery/mob/autumn_3_mobile_3x-min.png 3x
-            " media="(max-width:768px)" />
-          <img class="gallery__img special" src="./images/gallery/mob/autumn_3_mobile_1x-min.png" alt="autumn" />
         </picture>
       </li>
       <li class="gallery-autumn__item">
@@ -242,6 +250,27 @@
           <img class="gallery__img" src="./images/gallery/mob/winter_1_mobile_1x.png" alt="winter" />
         </picture>
       </li>
+
+      <li class="gallery-winter__item special">
+        <picture>
+          <source srcset="
+              ./images/gallery/desk/winter_3_desk_1x-min.png 1x,
+              ./images/gallery/desk/winter_3_desk_2x-min.png 2x,
+              ./images/gallery/desk/winter_3_desk_3x-min.png 3x
+            " media="(min-width:1440px)" />
+          <source srcset="
+              ./images/gallery/tab/winter_3_tabl_1x.png 1x,
+              ./images/gallery/tab/winter_3_tabl_2x.png 2x,
+              ./images/gallery/tab/winter_3_tabl_3x.png 3x
+            " media="(min-width:768px)" />
+          <source srcset="
+              ./images/gallery/mob/winter_3_mobile_1x.png 1x,
+              ./images/gallery/mob/winter_3_mobile_2x.png 2x,
+              ./images/gallery/mob/winter_3_mobile_3x.png 3x
+            " media="(max-width:768px)" />
+          <img class="gallery__img special" src="./images/gallery/mob/winter_3_mobile_1x.png" alt="winter" />
+        </picture>
+      </li>
       <li class="gallery-winter__item">
         <picture>
           <source srcset="
@@ -260,26 +289,6 @@
               ./images/gallery/mob/winter_2_mobile_3x.png 3x
             " media="(max-width:768px)" />
           <img class="gallery__img" src="./images/gallery/mob/winter_2_mobile_1x.png" alt="winter" />
-        </picture>
-      </li>
-      <li class="gallery-winter__item">
-        <picture>
-          <source srcset="
-              ./images/gallery/desk/winter_3_desk_1x-min.png 1x,
-              ./images/gallery/desk/winter_3_desk_2x-min.png 2x,
-              ./images/gallery/desk/winter_3_desk_3x-min.png 3x
-            " media="(min-width:1440px)" />
-          <source srcset="
-              ./images/gallery/tab/winter_3_tabl_1x.png 1x,
-              ./images/gallery/tab/winter_3_tabl_2x.png 2x,
-              ./images/gallery/tab/winter_3_tabl_3x.png 3x
-            " media="(min-width:768px)" />
-          <source srcset="
-              ./images/gallery/mob/winter_3_mobile_1x.png 1x,
-              ./images/gallery/mob/winter_3_mobile_2x.png 2x,
-              ./images/gallery/mob/winter_3_mobile_3x.png 3x
-            " media="(max-width:768px)" />
-          <img class="gallery__img special" src="./images/gallery/mob/winter_3_mobile_1x.png" alt="winter" />
         </picture>
       </li>
       <li class="gallery-winter__item">
@@ -337,11 +346,32 @@
               ./images/gallery/tab/spring_1_tabl_3x.png 3x
             " media="(min-width:768px)" />
           <source srcset="
-              ./images/gallery/mob/spring_1_mobile-1x.png 1x,
+              ./images/gallery/mob/spring_1_mobile_1x.png 1x,
               ./images/gallery/mob/spring_1_mobile_2x.png 2x,
               ./images/gallery/mob/spring_1_mobile_3x.png 3x
             " media="(max-width:768px)" />
-          <img class="gallery__img" src="./images/gallery/mob/spring_1_mobile-1x.png" alt="spring" />
+          <img class="gallery__img" src="./images/gallery/mob/spring_1_mobile_1x.png" alt="spring" />
+        </picture>
+      </li>
+
+      <li class="gallery-spring__item special">
+        <picture>
+          <source srcset="
+              ./images/gallery/desk/spring_3_desk_1x-min.png 1x,
+              ./images/gallery/desk/spring_3_desk_2x-min.png 2x,
+              ./images/gallery/desk/spring_3_desk_3x-min.png 3x
+            " media="(min-width:1440px)" />
+          <source srcset="
+              ./images/gallery/tab/spring_3_tabl_1x.png 1x,
+              ./images/gallery/tab/spring_3_tabl_2x.png 2x,
+              ./images/gallery/tab/spring_3_tabl_3x.png 3x
+            " media="(min-width:768px)" />
+          <source srcset="
+              ./images/gallery/mob/spring_3_mobile_1x.png 1x,
+              ./images/gallery/mob/spring_3_mobile_2x.png 2x,
+              ./images/gallery/mob/spring_3_mobile_3x.png 3x
+            " media="(max-width:768px)" />
+          <img class="gallery__img special" src="./images/gallery/mob/spring_3_mobile_1x.png" alt="spring" />
         </picture>
       </li>
       <li class="gallery-spring__item">
@@ -363,26 +393,6 @@
               ./images/gallery/mob/spring_2_mobile_3x.png 3x
             " media="(max-width:768px)" />
           <img class="gallery__img" src="./images/gallery/mob/spring_2_mobile_1x.png" alt="spring" />
-        </picture>
-      </li>
-      <li class="gallery-spring__item">
-        <picture>
-          <source srcset="
-              ./images/gallery/desk/spring_3_desk_1x-min.png 1x,
-              ./images/gallery/desk/spring_3_desk_2x-min.png 2x,
-              ./images/gallery/desk/spring_3_desk_3x-min.png 3x
-            " media="(min-width:1440px)" />
-          <source srcset="
-              ./images/gallery/tab/spring_3_tabl_1x.png 1x,
-              ./images/gallery/tab/spring_3_tabl_2x.png 2x,
-              ./images/gallery/tab/spring_3_tabl_3x.png 3x
-            " media="(min-width:768px)" />
-          <source srcset="
-              ./images/gallery/mob/spring_3_mobile_1x.png 1x,
-              ./images/gallery/mob/spring_3_mobile_2x.png 2x,
-              ./images/gallery/mob/spring_3_mobile_3x.png 3x
-            " media="(max-width:768px)" />
-          <img class="gallery__img special" src="./images/gallery/mob/spring_3_mobile_1x.png" alt="spring" />
         </picture>
       </li>
       <li class="gallery-spring__item">
@@ -426,5 +436,33 @@
         </picture>
       </li>
     </ul>
+    <div class="navigation__wrapper">
+      <button class="navigation__btn" id="minus-navigate" type="button">
+        <svg class="navigation__svg" width="15px" height="27px">
+          <use href="./images/svg/icon.svg#left" />
+        </svg></button><button class="navigation__btn" id="plus-navigate" type="button">
+        <svg class="navigation__svg" width="15px" height="27px">
+          <use href="./images/svg/icon.svg#right" />
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="modal-gallery">
+    <button class="modal-gallery__btn">
+      <svg class="modal-gallery__svg" width="20px" height="20px">
+        <use href="./images/svg/icon.svg#close" />
+      </svg>
+    </button>
+    <div class="modal-gallery__content">d</div>
+    <div class="reviews__wrapper">
+      <button class="reviews__btn" id="minus" type="button">
+        <svg class="reviews__svg" width="15px" height="27px">
+          <use href="./images/svg/icon.svg#left" />
+        </svg></button><button class="reviews__btn" id="plus" type="button">
+        <svg class="reviews__svg" width="15px" height="27px">
+          <use href="./images/svg/icon.svg#right" />
+        </svg>
+      </button>
+    </div>
   </div>
 </section>
