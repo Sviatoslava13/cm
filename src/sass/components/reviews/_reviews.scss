@@ -71,14 +71,30 @@
 
   &__svg {
     fill: $main-color;
-    position: fixed;
-      top: 92%;
-      left: 85%;
   }
 
   &__picture {
     width: 100%;
     height: 100%;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    @media screen and(min-width: $min768) {
+      margin-top: 40px;
+    }
+  }
+  &__btn {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 90%;
+    left: 84%;
+    border: none;
+    outline: none;
+    z-index: 20;
   }
 }
 
@@ -102,16 +118,6 @@
 
   &.is-transform {
     border: 0;
-  }
-}
-
-.reviews__wrapper {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-
-  @media screen and(min-width: $min768) {
-    margin-top: 40px;
   }
 }
 
@@ -184,17 +190,6 @@
   @media screen and(min-width: $min1280) {
     left: 52%;
   }
-}
-
-.reviews__btn {
-  width: 40px;
-  height: 40px;
-  position: fixed;
-  top: 90%;
-  left: 84%;
-  border: none;
-  outline: none;
-  z-index: 20;
 }
 
 .wrapper {
