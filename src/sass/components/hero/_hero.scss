@@ -1,0 +1,67 @@
+.hero {
+  padding-top: 189px;
+  padding-bottom: 188px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  background-image: url(../images/hero/hero_tablet_1x.png);
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../images/hero/hero_tablet_2x.png);
+  }
+  @media (min-resolution: 3dppx) {
+    background-image: url(../images/hero/hero_tablet_3x.png);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-top: 199px;
+    padding-bottom: 243px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 208px;
+    padding-bottom: 208px;
+    background-image: url(../images/hero/hero_desk_1x.png);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../images/hero/hero_desk_2x.png);
+    }
+    @media (min-resolution: 3dppx) {
+      background-image: url(../images/hero/hero_desk_3x.png);
+    }
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: $cubic;
+  }
+  &__wrapper.is-visible {
+    opacity: 1;
+    pointer-events: all;
+    transition: $cubic;
+  }
+  &__title {
+    @extend %font-hero;
+    text-align: center;
+  }
+  &__subtitle {
+    @extend %font-subtitle;
+    margin-top: 49px;
+    margin-bottom: 81px;
+    text-align: center;
+    max-width: 315px;
+    @media screen and(min-width:768px) and(max-width:$max1280) {
+      margin: 40px 0;
+      max-width: 568px;
+    }
+    @media screen and(min-width:$min1280) {
+      margin: 60px 0;
+      max-width: 612px;
+    }
+  }
+}

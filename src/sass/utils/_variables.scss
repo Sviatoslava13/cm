@@ -1,53 +1,48 @@
-$green: #395c4b;
-$dark: #202321;
-$light: #f1f6f6;
-$grey: #a3a5a3;
+$min1280: 1280px;
+$max1280: 1279px;
 
-%hover-style:hover,
-%hover-style:focus {
-  background-color: #1d4f36;
-  box-shadow: 0px 4px 32px 4px rgba(32, 35, 33, 0.2);
-}
-%active-style:active {
-  background-color: #003d1f;
-}
-%hover-input:hover,
-%hover-input:focus {
-  color: $green;
-  border-bottom: 1px solid $green;
-  box-shadow: 0px 4px 32px 4px rgba(32, 35, 33, 0.2);
-}
-%active-input:active {
-  color: #003d1f;
-  border-bottom: 1px solid #003d1f;
+$min768: 768px;
+$max768: 767px;
+
+$min375: 375px;
+$max375: 374px;
+
+// Colors
+
+$main-color: #395c4b;
+$main-color-text: #202321;
+$white-color: #f1f6f6;
+$second-color: #a3a5a3;
+$backdrop-color: rgba(32, 35, 33, 0.7);
+$hover-color: #1d4f36;
+$active-color: #003d1f;
+//Cubic
+$cubic: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+//Font
+%font-hero {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.33;
+  @media screen and(min-width:768px) and(max-width:$max1280) {
+    font-size: 70px;
+  }
+  @media screen and(min-width:$min1280) {
+    font-size: 110px;
+  }
 }
 %font-title {
   font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
-  line-height: 1.34;
-  @media screen and(min-width: $tablet) {
+  line-height: 1.33;
+  @media screen and(min-width:768px) and(max-widht:$max1280) {
     font-size: 50px;
   }
-
-  @media screen and(min-width: $desktop) {
+  @media screen and(min-width:$min1280) {
     font-size: 70px;
-    line-height: 1.32;
-  }
-}
-%font-hero {
-  font-family: 'Playfair Display';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 1.325;
-  @media screen and(min-width: $tablet) {
-    font-size: 70px;
-  }
-  @media screen and(min-width: $desktop) {
-    font-size: 110px;
-    line-height: 1.33;
   }
 }
 %font-subtitle {
@@ -55,49 +50,64 @@ $grey: #a3a5a3;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
-  line-height: 1.37;
-  @media screen and(min-width: $tablet) {
+  line-height: 1.33;
+  @media screen and(min-width:768px) and(max-width:$max1280) {
     font-size: 20px;
-    line-height: 1.35;
   }
-  @media screen and(min-width: $desktop) {
+  @media screen and(min-width:$min1280) {
     font-size: 28px;
   }
 }
-%font-text {
+%font-maintext {
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.37;
-  @media screen and(min-width: $tablet) {
+  line-height: 1.33;
+  @media screen and(min-width:768px) {
     font-size: 20px;
-    line-height: 1.35;
   }
-  @media screen and(min-width: $desktop) {
+  @media screen and(min-width:$min1280) {
     font-size: 24px;
-    line-height: 1.37;
   }
 }
-
-%font-modal {
+%font-header {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.35;
+}
+%font-modalTitle {
+  color: $main-color;
   font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.33;
-  @media screen and(min-width: $tablet) {
+  @media screen and(min-width:768px) and(max-width:$max1280) {
     font-size: 32px;
-    line-height: 1.34;
   }
-  @media screen and(min-width: $desktop) {
+  @media screen and(min-width:$min1280) {
     font-size: 60px;
-    line-height: 1.32;
   }
 }
-%font-header {
-  font-family: 'Manrope';
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 1.35;
+%hover-input:hover,
+%hover-input:focus {
+  color: $main-color;
+  border-bottom: 1px solid $main-color;
+}
+
+%active-input:active {
+  color: $active-color;
+  border-bottom: 1px solid $active-color;
+}
+%hover-style:hover,
+%hover-style:focus {
+  background-color: $hover-color;
+  box-shadow: 0px 4px 32px 4px rgba(32, 35, 33, 0.2);
+}
+
+%active-style:active {
+  background-color: $active-color;
 }

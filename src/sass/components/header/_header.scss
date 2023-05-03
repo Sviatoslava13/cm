@@ -1,0 +1,87 @@
+@import "./mobileMenu";
+@import "../globalStyle/contacts";
+
+.header {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  transform: translateX(50%);
+  width: 100%;
+  z-index: 9;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    min-width: 768px;
+  }
+  @media screen and (min-width: 1280px) {
+    min-width: 1280px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and(min-width: 1280px) {
+      position: relative;
+    }
+  }
+  &__logo {
+    position: relative;
+    z-index: 10;
+    padding: 28px 0;
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      margin-left: 82px;
+    }
+    @media screen and (min-width: 1280px) {
+      display: block;
+      padding: 40px 0;
+    }
+  }
+  &__icon {
+    width: 56px;
+    height: 26px;
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      width: 66px;
+      height: 31px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 80px;
+      height: 38px;
+    }
+  }
+
+  &__nav {
+    color: white;
+    @media screen and (max-width: 767px) {
+      margin-top: 133px;
+      // margin-left: 30px;
+    }
+
+    @media screen and(min-width:768px) and(max-width:1279px) {
+      margin-top: 180px;
+      // margin-left: 82px;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    @media screen and(min-width:768px) and(max-width:1279px) {
+      gap: 40px;
+    }
+    @media screen and (min-width: 1280px) {
+      flex-direction: row;
+      gap: 80px;
+    }
+  }
+  &__link {
+    transition: $cubic;
+    @media screen and (min-width: 1280px) {
+      display: block;
+      padding: 40px 0;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+      color: $main-color;
+    }
+  }
+}

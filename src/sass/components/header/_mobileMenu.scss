@@ -1,0 +1,85 @@
+.backdropCloseMenu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100vh;
+  opacity: 0;
+  pointer-events: none;
+  background-color: transparent;
+  &.is-open {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+.menu {
+  @extend %font-header;
+  color: white;
+
+  @media screen and(max-width:$max1280) {
+    position: absolute;
+    top: 0;
+    left: -1px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $backdrop-color;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: $cubic;
+  }
+}
+.menu.is-open {
+  opacity: 1;
+  pointer-events: all;
+  transition: $cubic;
+}
+
+.btn__menu {
+  position: relative;
+  z-index: 10;
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.line {
+  display: block;
+  fill: none;
+  stroke: white;
+  stroke-width: 6;
+
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__first {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  &__second {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+  }
+  &__third {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .opened &__first {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+  .opened &__second {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+  }
+  .opened &__third {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+}

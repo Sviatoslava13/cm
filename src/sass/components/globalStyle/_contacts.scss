@@ -1,0 +1,40 @@
+.contacts {
+  &--header {
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+    margin-top: 50px;
+
+    @media screen and(max-width:767px) {
+      padding-bottom: 114px;
+    }
+    @media screen and(max-width:320px) {
+      padding-bottom: 136px;
+    }
+    @media screen and(min-width:768px) and(max-width:1279px) {
+      flex-direction: row;
+      margin-top: 38px;
+      padding-bottom: 206px;
+    }
+    @media screen and(min-width:1280px) {
+      position: absolute;
+      top: 638px;
+      right: 0;
+      flex-direction: column;
+    }
+  }
+
+  &__link {
+    transition: $cubic;
+    &:hover,
+    &:focus,
+    &:active {
+      color: $main-color;
+    }
+  }
+
+  &__icon {
+    width: 34px;
+    height: 34px;
+  }
+}

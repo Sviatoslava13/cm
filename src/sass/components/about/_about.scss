@@ -1,0 +1,37 @@
+.about {
+  padding-top: 60px;
+
+  @media screen and(min-width: $min768) {
+    padding-top: 80px;
+  }
+
+  &__title {
+    @extend %font-title;
+    color: $main-color;
+    margin-bottom: 20px;
+    text-align: center;
+
+    @media screen and(min-width: $min768) {
+      margin-bottom: 40px;
+    }
+
+    @media screen and(min-width: $min1280) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__text {
+    @extend %font-maintext;
+    color: $main-color-text;
+
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+
+    @media screen and(min-width: $min768) {
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+    }
+  }
+}

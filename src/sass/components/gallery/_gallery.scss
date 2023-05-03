@@ -1,0 +1,221 @@
+.gallery__title {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+    text-align: center;
+    color: $main-color;
+
+    @media screen and (min-width:768px) and (max-width:1279px) {
+        font-size: 50px;
+        line-height: 67px;
+    }
+
+    ;
+
+    @media screen and (min-width:1280px) {
+        font-size: 70px;
+        line-height: 93px;
+    }
+
+    ;
+}
+
+.gallery__listBtn {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media screen and (min-width:768px) and (max-width:1279px) {
+        margin: 40px 0;
+        flex-wrap: nowrap;
+        gap: 20px;
+    }
+
+    @media screen and (min-width:1280px) {
+        margin: 60px 0;
+        gap: 20px;
+    }
+}
+
+.gallery__itemBtn {
+    cursor: pointer;
+}
+
+.gallery__itemBtn:nth-child(2n + 1) {
+    @media screen and (max-width:768px) {
+        margin-right: 19px;
+    }
+}
+
+.gallery__itemBtn:nth-child(-n + 2) {
+    @media screen and (max-width:768px) {
+        margin-bottom: 12px;
+    }
+}
+
+.gallery__button {
+    width: 147px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: $main-color;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    transition: transform 1s ease;
+
+    @media screen and (min-width:768px) and (max-width:1279px) {
+        width: 167px;
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    @media screen and (min-width:1280px) {
+        width: 277px;
+        font-size: 28px;
+        line-height: 38px;
+    }
+}
+
+.gallery__button:hover,
+.gallery__button:focus {
+    background-color: rgb(57, 92, 75);
+    color: #F1F6F6;
+}
+
+.gallery__button--active {
+    background-color: rgb(57, 92, 75);
+    color: #F1F6F6;
+}
+
+
+.gallery__photoContainer {
+    height: 608px;
+
+    @media screen and (min-width:768px) {
+        position: relative;
+        height: 354px;
+    }
+
+    @media screen and (min-width:1280px) {
+        height: 534px;
+        overflow: visible;
+    }
+}
+
+.gallery__box1 {
+    opacity: 0;
+    transition: $cubic;
+
+    &.is-visible {
+        position: relative;
+        opacity: 1;
+        pointer-events: all;
+    }
+}
+
+.gallery__slide {
+    transition: transform 1s ease;
+}
+
+.gallery__slide:hover {
+    @media screen and (min-width:1280px) {
+        transform: scale(1.25);
+        transition: transform 1s ease;
+        z-index: 4;
+    }
+}
+
+.gallery__prev,
+.gallery__next {
+    color: #395C4B;
+    top: 590px;
+}
+
+.gallery__prev {
+    left: 120px;
+}
+
+.gallery__next {
+    left: 175px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 20px;
+}
+
+.gallery__slide {
+    @media screen and (min-width:768px) {
+        position: absolute;
+        top: 0;
+    }
+}
+
+.swiper-slide.slide1,
+.swiper-slide.slide2,
+.swiper-slide.slide4,
+.swiper-slide.slide5 {
+    @media screen and (min-width:1280px) {
+        width: 329px !important;
+        height: 254px !important;
+    }
+}
+
+.swiper-slide.slide3 {
+    @media screen and (min-width:1280px) {
+        width: 471px !important;
+        height: 528px !important;
+    }
+}
+
+.swiper-slide.slide2 {
+    @media screen and (min-width:768px) and (max-width:1279px) {
+        top: 182px;
+    }
+
+    @media screen and (min-width:1280px) {
+        top: 274;
+    }
+}
+
+.swiper-slide.slide3 {
+    @media screen and (min-width:768px) and (max-width:1279px) {
+        left: 208px;
+    }
+
+    @media screen and (min-width:1280px) {
+        left: 349px;
+    }
+}
+
+.swiper-slide.slide4 {
+    @media screen and (min-width:768px) and (max-width:1279px) {
+        left: 532px;
+    }
+
+    @media screen and (min-width:1280px) {
+        left: 840px;
+    }
+}
+
+.swiper-slide.slide5 {
+    @media screen and (min-width:768px) and (max-width:1279px) {
+        top: 182px;
+        left: 532px;
+    }
+
+    @media screen and (min-width:1280px) {
+        left: 840px;
+        top: 274;
+    }
+}
+
+.sl-overlay {
+    background-color: rgba(32, 35, 33, 0.5) !important
+}
