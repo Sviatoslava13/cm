@@ -57,17 +57,17 @@
       }
     }
   }
-  &__btn{
+  &__btn {
     margin: 0 auto;
   }
-  &__subtext{
+  &__subtext {
     @extend %font-subtitle;
     margin: 20px 0;
     color: $main-color;
     text-align: center;
-      @media screen and(min-width:767px) {
-margin-top: 40px;
-      }
+    @media screen and(min-width:767px) {
+      margin-top: 40px;
+    }
   }
 }
 
@@ -75,29 +75,29 @@ margin-top: 40px;
   position: absolute;
   left: 0;
   top: 0;
-  max-width: 1440px;
-  max-height: 739px;
+  width: 100%;
+  max-width: 1280px;
   opacity: 0;
   pointer-events: none;
   transition: $cubic;
-
   opacity: 0;
+
   &.is-visible {
     position: relative;
     opacity: 1;
     pointer-events: all;
   }
+
 }
 
 .bukovel {
   position: absolute;
   left: 0;
   top: 0;
-  max-width: 1440px;
-  max-height: 739px;
+  width: 100%;
+    max-width: 1280px;
   opacity: 0;
   pointer-events: none;
-
   transition: $cubic;
   &.is-visible {
     position: relative;
@@ -110,11 +110,10 @@ margin-top: 40px;
   position: absolute;
   left: 0;
   top: 0;
-  max-width: 1440px;
-  max-height: 739px;
+  width: 100%;
+    max-width: 1280px;
   opacity: 0;
   pointer-events: none;
-
   transition: $cubic;
   &.is-visible {
     position: relative;

@@ -3,7 +3,7 @@ const metaAnimationRef = document.querySelectorAll('.tours__meta');
 new Swiper('.swiper1', {
   modules: [Autoplay, Pagination],
   slidesPerView: 1,
-  spaceBetween: 50,
+  spaceBetween: 0,
   speed: 2000,
   autoplay: {
     delay: 7000,
