@@ -71,6 +71,9 @@
 
   &__svg {
     fill: $main-color;
+    position: fixed;
+      top: 92%;
+      left: 85%;
   }
 
   &__picture {
